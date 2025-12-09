@@ -22,7 +22,6 @@
                 <span class="logo-text">Архив Чудес</span>
             </div>
 
-            <!-- Навигация для десктопа -->
             <nav class="desktop-nav">
                 <ul>
                     <li><a href="#universe">Вселенная</a></li>
@@ -33,14 +32,12 @@
                 </ul>
             </nav>
 
-            <!-- Бургер-меню для мобильных -->
             <button class="burger-menu" aria-label="Открыть меню">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
 
-            <!-- Мобильное меню -->
             <nav class="mobile-nav">
                 <ul>
                     <li><a href="#universe">Вселенная</a></li>
@@ -54,9 +51,7 @@
         </div>
     </header>
 
-    <!-- Секции сайта -->
     <main>
-        <!-- Герой-секция -->
         <section class="hero" id="home">
             <div class="hero-content">
                 <div class="vintage-stamp">
@@ -78,7 +73,6 @@
             </div>
         </section>
 
-        <!-- Секция "О вселенной" -->
         <section class="universe-section" id="universe">
             <div class="container">
                 <h2 class="section-title">Путь в нору кролика</h2>
@@ -111,7 +105,6 @@
             </div>
         </section>
 
-        <!-- Секция "Персонажи" -->
         <section class="characters-section" id="characters">
             <div class="container">
                 <h2 class="section-title">Обитатели Страны Чудес</h2>
@@ -119,28 +112,20 @@
                     Кликните на портрет, чтобы узнать все секреты персонажа
                 </p>
 
-                <div class="characters-grid">
-                    <!-- Карточки будут генерироваться через JavaScript -->
-                </div>
+                <div class="characters-grid"></div>
 
-                <!-- Модальное окно персонажа -->
                 <div class="character-modal" id="characterModal">
                     <div class="modal-content">
                         <button class="close-modal">×</button>
                         <div class="modal-body">
-                            <div class="modal-avatar">
-                                <!-- Аватар загружается через JS -->
-                            </div>
-                            <div class="modal-info">
-                                <!-- Информация загружается через JS -->
-                            </div>
+                            <div class="modal-avatar"></div>
+                            <div class="modal-info"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Секция "Карта" -->
         <section class="locations-section" id="locations">
             <div class="container">
                 <h2 class="section-title">Карта безумия</h2>
@@ -149,17 +134,12 @@
                 </p>
 
                 <div class="locations-container">
-                    <div class="locations-map">
-                        <!-- Интерактивная карта будет генерироваться через JavaScript -->
-                    </div>
-                    <div class="locations-info">
-                        <!-- Информация о локации будет загружаться через JavaScript -->
-                    </div>
+                    <div class="locations-map"></div>
+                    <div class="locations-info"></div>
                 </div>
             </div>
         </section>
 
-        <!-- Секция "Цитаты" -->
         <section class="quotes-section" id="quotes">
             <div class="container">
                 <h2 class="section-title">Безумная мудрость</h2>
@@ -220,14 +200,11 @@
                         <span class="btn-icon">🎲</span>
                         <span class="btn-text">Случайная цитата</span>
                     </button>
-                    <div class="random-quote-result">
-                        <!-- Случайная цитата появится здесь -->
-                    </div>
+                    <div class="random-quote-result"></div>
                 </div>
             </div>
         </section>
 
-        <!-- Секция "Форма" -->
         <section class="form-section" id="ask">
             <div class="container">
                 <h2 class="section-title">Спросить оракула</h2>
@@ -238,38 +215,19 @@
                 <form class="oracle-form" id="questionForm">
                     <div class="form-group">
                         <label for="name">Ваше имя</label>
-                        <input
-                            type="text"
-                            id="name"
-                            placeholder="Но кто вы, собственно?"
-                            required
-                        />
-                        <div class="form-hint">
-                            Настоящее имя или вымышленное — не важно
-                        </div>
+                        <input type="text" id="name" placeholder="Но кто вы, собственно?" required>
+                        <div class="form-hint">Настоящее имя или вымышленное — не важно</div>
                     </div>
 
                     <div class="form-group">
                         <label for="email">Ваш email</label>
-                        <input
-                            type="email"
-                            id="email"
-                            placeholder="для ответа через кроличью почту"
-                            required
-                        />
-                        <div class="error-message" id="emailError">
-                            Любопытно... Этот адрес выглядит странно
-                        </div>
+                        <input type="email" id="email" placeholder="для ответа через кроличью почту" required>
+                        <div class="error-message" id="emailError">Любопытно... Этот адрес выглядит странно</div>
                     </div>
 
                     <div class="form-group">
                         <label for="question">Ваш вопрос</label>
-                        <textarea
-                            id="question"
-                            placeholder="Что вас озадачивает?"
-                            rows="4"
-                            required
-                        ></textarea>
+                        <textarea id="question" placeholder="Что вас озадачивает?" rows="4" required></textarea>
                     </div>
 
                     <button type="submit" class="submit-button">
@@ -290,7 +248,6 @@
         </section>
     </main>
 
-    <!-- Футер -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -317,52 +274,21 @@
                 <div class="footer-social">
                     <h4>Следить за безумием</h4>
                     <div class="social-icons">
-                        <a
-                            href="#"
-                            class="social-icon"
-                            title="Чешир в Твиттере"
-                            aria-label="Twitter"
-                            >😸</a
-                        >
-                        <a
-                            href="#"
-                            class="social-icon"
-                            title="Кролик в Инстаграме"
-                            aria-label="Instagram"
-                            >🐇</a
-                        >
-                        <a
-                            href="#"
-                            class="social-icon"
-                            title="Шляпник в ТикТоке"
-                            aria-label="TikTok"
-                            >🎩</a
-                        >
-                        <a
-                            href="#"
-                            class="social-icon"
-                            title="Гусеница на YouTube"
-                            aria-label="YouTube"
-                            >🐛</a
-                        >
+                        <a href="#" class="social-icon" title="Чешир в Твиттере" aria-label="Twitter">😸</a>
+                        <a href="#" class="social-icon" title="Кролик в Инстаграме" aria-label="Instagram">🐇</a>
+                        <a href="#" class="social-icon" title="Шляпник в ТикТоке" aria-label="TikTok">🎩</a>
+                        <a href="#" class="social-icon" title="Гусеница на YouTube" aria-label="YouTube">🐛</a>
                     </div>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p class="copyright">
-                    © 1865 (примерно) Льюис Кэрролл. Всяческое безумие сохранено.
-                </p>
+                <p class="copyright">© 1865 (примерно) Льюис Кэрролл. Всяческое безумие сохранено.</p>
                 <p class="disclaimer">
                     Этот сайт — дань уважения оригинальному произведению. Все
                     иллюстрации в стиле Джона Тенниела. Фоновые изображения с Unsplash.
                 </p>
-                <p class="disclaimer">
-                    <small
-                        >Проект создан для образовательных целей и не является
-                        официальным.</small
-                    >
-                </p>
+                <p class="disclaimer"><small>Проект создан для образовательных целей и не является официальным.</small></p>
             </div>
         </div>
     </footer>
