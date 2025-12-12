@@ -252,7 +252,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Добавляем обработчик для отладки
   if (typeof FormspreeDebug !== "undefined" && FormspreeDebug) {
     console.log("🔧 Форма настроена и готова к работе");
-    console.log("📧 Endpoint:", "https://formspree.io/f/xrbnrgzq");
+    console.log("📧 Endpoint:", "https://formspree.io/f/mdkqyogd");
     console.log("🎯 Получатель:", "HamsterTheBest14@mail.ru");
   }
 });
