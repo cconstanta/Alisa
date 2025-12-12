@@ -1,5 +1,5 @@
 // form.js - Обработка формы обратной связи для сайта "Алиса в Стране Чудес"
-// Использует Formspree для отправки на email: HamsterTheBest14@mail.ru
+// Использует Formspree для отправки на email: HamsterTheBest14@gmail.com
 // Endpoint URL: https://formspree.io/f/mdkqyogd
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 question: formElement.querySelector('#question').value,
                 _subject: 'Новый вопрос для Гусеницы из Архива Чудес',
                 _replyto: formElement.querySelector('#email').value,
-                _cc: 'HamsterTheBest14@mail.ru',
+                _cc: 'HamsterTheBest14@gmail.com',
                 _website: 'Архив Страны Чудес',
                 _url: window.location.href,
                 _timestamp: new Date().toISOString()
@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Логируем успех в консоль
             console.log('✅ Форма успешно отправлена на Formspree!');
             console.log('📧 Endpoint:', 'https://formspree.io/f/mdkqyogd');
-            console.log('📬 Письмо должно прийти на: HamsterTheBest14@mail.ru');
+            console.log('📬 Письмо должно прийти на: HamsterTheBest14@gmail.com');
             
         } catch (error) {
             // Обработка ошибок
@@ -190,7 +190,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const helpMessage = document.createElement('div');
                 helpMessage.className = 'form-hint';
                 helpMessage.style.cssText = 'margin-top: 15px; padding: 10px; background: rgba(212, 175, 55, 0.1); border-radius: 5px;';
-                helpMessage.innerHTML = 'Если проблема повторяется, напишите напрямую на <strong>HamsterTheBest14@mail.ru</strong>';
+                helpMessage.innerHTML = 'Если проблема повторяется, напишите напрямую на <strong>HamsterTheBest14@gmail.com</strong>';
                 form.appendChild(helpMessage);
             }, 1000);
         }
@@ -251,7 +251,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Добавляем обработчик для отладки
     console.log('🔧 Форма настроена и готова к работе');
     console.log('📧 Endpoint URL:', 'https://formspree.io/f/mdkqyogd');
-    console.log('🎯 Получатель:', 'HamsterTheBest14@mail.ru');
+    console.log('🎯 Получатель:', 'HamsterTheBest14@gmail.com');
     console.log('🌐 Ограничение домена:', 'cconstanta.github.io');
 });
 
